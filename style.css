@@ -118,6 +118,7 @@
     position: relative;
     border-radius: 55px;
     border: none;
+    border-style: none;
     color: rgb(255, 123, 0);
     cursor: pointer;
     background-color: aliceblue;
@@ -140,6 +141,14 @@
   #animation-button.animate::before {
     top: -70%;
     background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, #00f7ff 20%, transparent 30%),
+      radial-gradient(circle, #ff0062 20%, transparent 20%),
+      radial-gradient(circle, #0011ff 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #eeff00 15%, transparent 20%),
+      radial-gradient(circle, #ff0000 20%, transparent 20%),
+      radial-gradient(circle, #00eeff 20%, transparent 20%),
+      radial-gradient(circle, #48ff00 20%, transparent 20%),
+      radial-gradient(circle, #ff009d 20%, transparent 20%),
       radial-gradient(circle, transparent 20%, #00f7ff 20%, transparent 30%),
       radial-gradient(circle, #ff0062 20%, transparent 20%),
       radial-gradient(circle, #0011ff 20%, transparent 20%),
@@ -175,7 +184,15 @@
       radial-gradient(circle, #1eff00 20%, transparent 20%),
       radial-gradient(circle, #00ffff 20%, transparent 20%),
       radial-gradient(circle, #e100ff 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #ff8800 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #fffb00 15%, transparent 20%),
+      radial-gradient(circle, #1eff00 20%, transparent 20%),
+      radial-gradient(circle, #00ffff 20%, transparent 20%),
+      radial-gradient(circle, #e100ff 20%, transparent 20%),
       radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+
+      
     background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
     animation: bottomBubbles ease-in-out 0.4s forwards infinite;
   }

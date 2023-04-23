@@ -6,6 +6,8 @@ const btnPlay = document.getElementById('btnPlay')
 let translate = document.getElementById('translate')
 
 btnPlay.addEventListener('click', function() {
+    let click = document.getElementById('click')
+    click.play()
     let video = document.getElementById('video')
     video.play()
 })
@@ -16,7 +18,6 @@ btnCorrect.addEventListener('click', (e) => {
     setTimeout(() => {
         btnCorrect.classList.remove('animate')
     }, 1000)  
-    
     let right = document.getElementById('right')
     right.play()
     translate.style.visibility = 'visible'
@@ -25,8 +26,8 @@ btnCorrect.addEventListener('click', (e) => {
     btnCorrect.style.backgroundColor = 'lime'
     btnCorrect.style.color = 'green'
     btnCorrect.disabled = 'true'
-    put.disabled = 'true'
-    putz.disabled = 'true'
+    btnWrong1.disabled = 'true'
+    btnWrong2.disabled = 'true'
 })
 
 btnWrong1.addEventListener('click', function() {
